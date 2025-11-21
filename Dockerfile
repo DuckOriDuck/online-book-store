@@ -1,6 +1,6 @@
 # 1. 베이스 이미지로 OpenJDK 8 Alpine 버전을 사용합니다.
 # Alpine Linux 기반 이미지는 크기가 작아 효율적입니다.
-FROM openjdk:8-jdk-alpine
+FROM eclipse-temurin:8-jdk-alpine
 
 # 2. JAR 파일이 위치할 경로를 지정합니다.
 # buildspec에서 `mvn clean package` 실행 후 target/*.jar 형태로 파일이 생성됩니다.
